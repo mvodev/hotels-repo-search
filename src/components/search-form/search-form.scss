@@ -1,0 +1,36 @@
+.search-form {
+  font-family: 'Arial',sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border: 1px solid rgb(6, 6, 113);
+  max-width: 380px;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+
+  &__header {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  &__error {
+    color: red;
+    font-size: 16px;
+  }
+
+  &__input {
+    border: 1px solid rgb(6, 6, 113);
+    height: 36px;
+    width: 100%;
+    padding: 0 5px;
+  }
+
+  &__submit {
+    width: 120px;
+    height: 40px;
+    background-color: rgb(6, 6, 113);
+    color: white;
+    border-radius: 5px;
+  }
+}

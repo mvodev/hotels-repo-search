@@ -1,0 +1,6 @@
+mixin search-form({action='#', title='Форма поиска репозиториев Git по подстроке'} = {})
+  form(action=action class="search-form js-search-form")  
+    h2.search-form__header=title
+    input(type="text" class="search-form__input js-search-form__input" placeholder="Введите подстроку поиска" name="search")
+    span.search-form__error.js-search-form__error
+    input(type="submit" class="search-form__submit js-search-form__submit" value="Искать")

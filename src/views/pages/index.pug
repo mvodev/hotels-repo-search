@@ -1,0 +1,10 @@
+extends ../layouts/default
+
+block variables
+
+block content
+  include ../../components/search-form/search-form.pug
+  h1 Стажировка HOTELS.RU поиск репозиториев GIT
+  +search-form()
+  include ../../components/search-result/search-result.pug
+  

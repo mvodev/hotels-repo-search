@@ -1,4 +1,6 @@
 section.search-result
   h2 Результаты поиска
-  .search-result__wrapper.js-search-result
-    img(class="search-result__loader" src="./assets/images/preloader.svg", alt="loader")
+  .search-result__wrapper.js-search-result 
+    .search-result__curtain.js-search-result__curtain.search-result__curtain_disabled
+    img(class="search-result__loader js-search-result__loader search-result__loader_disabled" src="./assets/images/preloader.svg", alt="loader")
+    ul.search-result__list.js-search-result__list

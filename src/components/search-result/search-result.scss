@@ -3,6 +3,28 @@
   flex-direction: column;
   gap: 10px;
 
+  &__curtain {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .5;
+    background-color: gray;
+  }
+
+  &__curtain.search-result__curtain_disabled {
+    display: none;
+  }
+
+  &__loader {
+    display: block;
+  }
+
+  &__loader.search-result__loader_disabled {
+    display: none;
+  }
+
   &__list,
   &__list-item {
     font-family: 'Arial',sans-serif;

@@ -1,5 +1,3 @@
-// import * as dotenv from 'dotenv';
-/// import { Octokit } from 'octokit';
 import { SearchForm } from '../search-form/search-form';
 
 class SearchResult {
@@ -8,10 +6,8 @@ class SearchResult {
     const searchFormRoot = document.querySelector('.js-search-form');
     this.searchForm = new SearchForm(searchFormRoot);
     this.searchForm.addObserver(this);
-    // dotenv.config();
   }
 
-  // eslint-disable-next-line class-methods-use-this
   async handleEvent(message, data) {
     if (message === 'search') {
       const queryString = `q=${encodeURIComponent(`${data} in:name`)}`;
@@ -41,7 +37,6 @@ class SearchResult {
           li.appendChild(a);
           li.appendChild(span);
           ul.appendChild(li);
-          console.log(result.items[i]);
         }
       }
       fragment.appendChild(ul);

@@ -3,6 +3,14 @@
   flex-direction: column;
   gap: 10px;
 
+  &__loader {
+    display: none;
+  }
+
+  &__loader .search-result__loader_active {
+    display: block;
+  }
+
   &__list,
   &__list-item {
     font-family: 'Arial',sans-serif;

@@ -32,5 +32,10 @@
     background-color: rgb(6, 6, 113);
     color: white;
     border-radius: 5px;
+    cursor: pointer;
+  }
+
+  &__submit:hover {
+    background-color: rgb(92, 92, 209);
   }
 }

@@ -30,7 +30,7 @@ class SearchResult {
           const li = document.createElement('li');
           li.classList.add('search-result__list-item');
           const a = document.createElement('a');
-          a.title = 'Ссылка';
+          a.title = 'Ссылка на репозиторий';
           a.href = result.items[i].url;
           a.textContent = `Название: ${result.items[i].name}`;
           a.target = '_blank';

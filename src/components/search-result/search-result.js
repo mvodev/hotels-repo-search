@@ -24,9 +24,9 @@ class SearchResult {
       } else {
         this.searchList.innerHTML = '';
         const MAX_ELEMS_TO_SHOW = 10;
-        const maxOfElements = result.total_count >= MAX_ELEMS_TO_SHOW
+        const elementsToShow = result.total_count >= MAX_ELEMS_TO_SHOW
           ? MAX_ELEMS_TO_SHOW : result.total_count;
-        for (let i = 0; i < maxOfElements; i += 1) {
+        for (let i = 0; i < elementsToShow; i += 1) {
           const li = document.createElement('li');
           li.classList.add('search-result__list-item');
           const a = document.createElement('a');

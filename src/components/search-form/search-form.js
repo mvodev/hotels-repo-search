@@ -1,6 +1,8 @@
-export class SearchForm {
+import EventObservable from '../../js/observers/EventObservable';
+
+export class SearchForm extends EventObservable {
   constructor(searchFormRootTag) {
-    this.observers = [];
+    super();
     this.searchForm = searchFormRootTag;
     this.searchError = document.querySelector('.js-search-form__error');
     this.searchInput = document.querySelector('.js-search-form__input');
@@ -29,13 +31,5 @@ export class SearchForm {
     if (isNameInputChange) {
       this.searchError.textContent = '';
     }
-  }
-
-  addObserver(o) {
-    this.observers.push(o);
-  }
-
-  removeObserver(o) {
-    this.observers = this.observers.filter((subscriber) => subscriber !== o);
   }
 }
